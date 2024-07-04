@@ -2,15 +2,7 @@ import { IoExpand } from "react-icons/io5";
 import { FaPencilAlt, FaTrash } from "react-icons/fa";
 import { Container, Tasks, InfoTask } from './styleTarefas';
 import { format } from "date-fns";
-
-interface Task {
-    nomeAutor: string;
-    telefone: string;
-    nomeTarefa: string;
-    dataTarefa: string;
-    descricao: string;
-}
-
+import { Task } from "../../Interfaces/Task";
 interface TarefasProps {
     tasks: Task[];
     deleteTask: (index: number) => void;
